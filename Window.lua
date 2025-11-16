@@ -739,7 +739,7 @@ Discord Creator : enzokagenou4
             queueEnabled = state
             if queue_on_teleport then
                 queue_on_teleport(state and [[
-                    loadstring(game:HttpGet("https://pandadevelopment.net/virtual/file/a89b226b162b2b57"))()
+                    loadstring(game:HttpGet("https://raw.githubusercontent.com/MajestySkie/Chloe-X/refs/heads/main/Games/FishIt.lua"))()
                 ]] or "")
             end
         end
