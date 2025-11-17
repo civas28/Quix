@@ -12,33 +12,26 @@ return function(Window, Tabs)
     local jobId = game.JobId
     local privateServerId = game.PrivateServerId
 
-    local InfoSection = Tabs.Info:AddSection("Quix Information", true)
+    local InfoSection = Tabs.Info:AddSection("Chloe X Information", true)
 
     InfoSection:AddParagraph({
-        Title = "Quix-Family",
+        Title = "Quix Family",
         Content = [[
-Developer : Civas
-Partner : Quix Family
-Game Script : Fish it - Premium
-Version : v4.2.0
-Dont forget join discord for information
-Follow me Tiktok : @chadichaa
-Discord Creator : enzokagenou4
-<font color="rgb(0,170,255)">Discord Quix Family</font>!<br/>
-<b>THANKS TO QUIX FAMILY</b>
+Quix family just for fun ur gameplay <font color="rgb(0,170,255)">Discord Chloe X</font>!<br/>
+<b>Use at your own risk!</b>
 ]],
         Icon = "water"
     })
 
     InfoSection:AddParagraph({
-        Title = "Discord",
-        Content = "Official link Quix-Family",
+        Title = "Quix Discord",
+        Content = "Official Quix Family!",
         Icon = "discord",
         ButtonText = "COPY LINK DISCORD",
         ButtonCallback = function()
             if setclipboard then
-                setclipboard("https://discord.gg/YJEPMhD6tp")
-                chloex("Succesfully copied link!")
+                setclipboard("https://discord.gg/YJEPMhD6tpC")
+                quix("Succesfully copied link!")
             end
         end
     })
@@ -59,7 +52,7 @@ Discord Creator : enzokagenou4
         ButtonCallback = function()
             if setclipboard then
                 setclipboard(currentJobId)
-                chloex("Succesfully Copied!")
+                quix("Succesfully Copied!")
             end
         end,
         SubButtonText = "Rejoin",
@@ -84,7 +77,7 @@ Discord Creator : enzokagenou4
                 local realJobId = InputJobId:gsub("^QXF%-", "")
                 TeleportService:TeleportToPlaceInstance(placeId, realJobId, LocalPlayer)
             else
-                chloex("Input Job Id!")
+                quix("Input Job Id!")
             end
         end
     })
@@ -119,7 +112,7 @@ Discord Creator : enzokagenou4
                 if LowestServer then
                     TeleportService:TeleportToPlaceInstance(placeId, LowestServer, LocalPlayer)
                 else
-                    chloex("No other server found.")
+                    quix("No other server found.")
                 end
             end)
         end,
@@ -150,7 +143,7 @@ Discord Creator : enzokagenou4
                     local randomServer = Servers[math.random(1, #Servers)]
                     TeleportService:TeleportToPlaceInstance(placeId, randomServer, LocalPlayer)
                 else
-                    chloex("No available server found!")
+                    quix("No available server found!")
                 end
             end)
         end
@@ -739,7 +732,7 @@ Discord Creator : enzokagenou4
             queueEnabled = state
             if queue_on_teleport then
                 queue_on_teleport(state and [[
-                    loadstring(game:HttpGet("https://pandadevelopment.net/virtual/file/2b26e2372724806a"))()
+                    loadstring(game:HttpGet("https://raw.githubusercontent.com/MajestySkie/Chloe-X/main/Main/ChloeX"))()
                 ]] or "")
             end
         end
