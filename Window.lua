@@ -15,9 +15,9 @@ return function(Window, Tabs)
     local InfoSection = Tabs.Info:AddSection("Chloe X Information", true)
 
     InfoSection:AddParagraph({
-        Title = "Quix Family",
+        Title = "QuixFamily",
         Content = [[
-Quix family just for fun ur gameplay <font color="rgb(0,170,255)">Discord Chloe X</font>!<br/>
+Just for fun ur gameplay <font color="rgb(0,170,255)">Discord Chloe X</font>!<br/>
 <b>Use at your own risk!</b>
 ]],
         Icon = "water"
