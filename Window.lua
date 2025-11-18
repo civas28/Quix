@@ -15,9 +15,11 @@ return function(Window, Tabs)
     local InfoSection = Tabs.Info:AddSection("Chloe X Information", true)
 
     InfoSection:AddParagraph({
-        Title = "QuixFamily",
+        Title = "Quix",
         Content = [[
-Just for fun ur gameplay <font color="rgb(0,170,255)">Discord Chloe X</font>!<br/>
+This script is still under development!
+There is a possibility it may get detected if used in public servers!
+If you have suggestions or found bugs, please report them to <font color="rgb(0,170,255)">Discord Quix</font>!<br/>
 <b>Use at your own risk!</b>
 ]],
         Icon = "water"
@@ -25,13 +27,13 @@ Just for fun ur gameplay <font color="rgb(0,170,255)">Discord Chloe X</font>!<br
 
     InfoSection:AddParagraph({
         Title = "Quix Discord",
-        Content = "Official Quix Family!",
+        Content = "Official link discord Quix",
         Icon = "discord",
         ButtonText = "COPY LINK DISCORD",
         ButtonCallback = function()
             if setclipboard then
-                setclipboard("https://discord.gg/YJEPMhD6tpC")
-                quix("Succesfully copied link!")
+                setclipboard("https://discord.gg/UraM5dCp9")
+                chloex("Succesfully copied link!")
             end
         end
     })
@@ -39,7 +41,7 @@ Just for fun ur gameplay <font color="rgb(0,170,255)">Discord Chloe X</font>!<br
     local InfoSection1 = Tabs.Info:AddSection("Server Job Id")
     local thumb, _ = Players:GetUserThumbnailAsync(LocalPlayer.UserId, Enum.ThumbnailType.HeadShot,
         Enum.ThumbnailSize.Size100x100)
-    local currentJobId = "QXF-" .. tostring(jobId)
+    local currentJobId = "CHX-" .. tostring(jobId)
 
     InfoSection1:AddPanel({
         Title = "Server Info",
@@ -52,7 +54,7 @@ Just for fun ur gameplay <font color="rgb(0,170,255)">Discord Chloe X</font>!<br
         ButtonCallback = function()
             if setclipboard then
                 setclipboard(currentJobId)
-                quix("Succesfully Copied!")
+                chloex("Succesfully Copied!")
             end
         end,
         SubButtonText = "Rejoin",
@@ -74,10 +76,10 @@ Just for fun ur gameplay <font color="rgb(0,170,255)">Discord Chloe X</font>!<br
         Title = "Join JobID",
         Callback = function()
             if InputJobId ~= "" then
-                local realJobId = InputJobId:gsub("^QXF%-", "")
+                local realJobId = InputJobId:gsub("^CHX%-", "")
                 TeleportService:TeleportToPlaceInstance(placeId, realJobId, LocalPlayer)
             else
-                quix("Input Job Id!")
+                chloex("Input Job Id!")
             end
         end
     })
@@ -112,7 +114,7 @@ Just for fun ur gameplay <font color="rgb(0,170,255)">Discord Chloe X</font>!<br
                 if LowestServer then
                     TeleportService:TeleportToPlaceInstance(placeId, LowestServer, LocalPlayer)
                 else
-                    quix("No other server found.")
+                    chloex("No other server found.")
                 end
             end)
         end,
@@ -143,7 +145,7 @@ Just for fun ur gameplay <font color="rgb(0,170,255)">Discord Chloe X</font>!<br
                     local randomServer = Servers[math.random(1, #Servers)]
                     TeleportService:TeleportToPlaceInstance(placeId, randomServer, LocalPlayer)
                 else
-                    quix("No available server found!")
+                    chloex("No available server found!")
                 end
             end)
         end
